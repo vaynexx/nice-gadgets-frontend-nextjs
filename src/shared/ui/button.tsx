@@ -37,6 +37,13 @@ const buttonVariants = cva(
 
         'favorite-selected':
           'rounded-none size-10 bg-favorite-selected border border-favorite-border text-[#EB5757]',
+
+        /* ---------button-color-picker----------- */
+        'color-picker':
+          'size-8 rounded-full shadow-[0_0_0_2px_var(--color-surface-1),0_0_0_3px_var(--color-icons)] hover:shadow-[0_0_0_2px_var(--color-surface-1),0_0_0_3px_#75767F]',
+
+        'color-picker-selected':
+          'size-8 rounded-full shadow-[0_0_0_2px_var(--color-surface-1),0_0_0_4px_var(--color-white)]',
       },
       size: {
         default:

@@ -68,6 +68,66 @@ export default function ButtonsDemo() {
           </Button>
         </div>
       </div>
+      <div>
+        <h2 className="text-white mb-4">Buttons Color Picker</h2>
+        <div className="flex gap-3">
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-space-gray"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-silver"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-gold"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-blue"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-red"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-black"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-green"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-yellow"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-white"
+          />
+          <Button
+            variant="color-picker"
+            size={null}
+            className="bg-product-purple"
+          />
+          <Button
+            variant="color-picker-selected"
+            size={null}
+            className="bg-product-gold"
+          />
+        </div>
+      </div>
     </div>
   );
 }
