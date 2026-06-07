@@ -1,12 +1,15 @@
 import { Button } from '@/shared/ui/button';
-import { ChevronDownIcon } from '@/shared/ui/icons/ChevronDown';
-import { ChevronLeftIcon } from '@/shared/ui/icons/ChevronLeft';
-import { ChevronRightIcon } from '@/shared/ui/icons/ChevronRight';
-import { ChevronUpIcon } from '@/shared/ui/icons/ChevronUp';
-import { HeartIcon } from '@/shared/ui/icons/HeartIcon';
-import { HeartIconSelected } from '@/shared/ui/icons/HeartIconSelected';
-import { MinusIcon } from '@/shared/ui/icons/MinusIcon';
-import { PlusIcon } from '@/shared/ui/icons/PlusIcon';
+import { ButtonColorPicker } from '@/shared/ui/ButtonColorPicker';
+import {
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  ChevronUpIcon,
+  HeartIcon,
+  HeartIconSelected,
+  MinusIcon,
+  PlusIcon,
+} from '@/shared/ui/icons';
 
 export default function ButtonsDemo() {
   return (
@@ -14,28 +17,29 @@ export default function ButtonsDemo() {
       <div>
         <h2 className="text-white mb-4">Buttons Pagination</h2>
         <div className="flex gap-2">
-          <Button variant="pagination">1</Button>
+          <Button variant="pagination" aria-selected={true}>
+            1
+          </Button>
           <Button variant="pagination">2</Button>
           <Button variant="pagination">3</Button>
-          <Button variant="pagination-selected">4</Button>
         </div>
       </div>
       <div>
         <h2 className="text-white mb-4">Buttons Chevron</h2>
         <div className="flex gap-2">
-          <Button variant="control" size={null}>
+          <Button variant="control">
             <ChevronLeftIcon />
           </Button>
-          <Button variant="control" size={null}>
+          <Button variant="control">
             <ChevronRightIcon />
           </Button>
-          <Button variant="control" size={null}>
+          <Button variant="control">
             <ChevronUpIcon />
           </Button>
-          <Button variant="control" size={null}>
+          <Button variant="control">
             <ChevronDownIcon />
           </Button>
-          <Button variant="control-disabled" size={null}>
+          <Button variant="control" disabled>
             <ChevronLeftIcon />
           </Button>
         </div>
@@ -43,27 +47,27 @@ export default function ButtonsDemo() {
       <div>
         <h2 className="text-white mb-4">Buttons Favorite</h2>
         <div className="flex gap-2">
-          <Button variant="favorite" size={null}>
-            <HeartIcon />
-          </Button>
-          <Button variant="favorite-selected" size={null}>
+          <Button variant="favorite" aria-pressed={true}>
             <HeartIconSelected />
+          </Button>
+          <Button variant="favorite" aria-pressed={false}>
+            <HeartIcon />
           </Button>
         </div>
       </div>
       <div>
         <h2 className="text-white mb-4">Buttons Plus/Minus</h2>
         <div className="flex gap-2">
-          <Button variant="control" size={null}>
+          <Button variant="control">
             <MinusIcon />
           </Button>
-          <Button variant="control" size={null}>
+          <Button variant="control">
             <PlusIcon />
           </Button>
-          <Button variant="control-disabled" size={null}>
+          <Button variant="control" disabled>
             <MinusIcon />
           </Button>
-          <Button variant="control-disabled" size={null}>
+          <Button variant="control" disabled>
             <PlusIcon />
           </Button>
         </div>
@@ -71,61 +75,17 @@ export default function ButtonsDemo() {
       <div>
         <h2 className="text-white mb-4">Buttons Color Picker</h2>
         <div className="flex gap-3">
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-space-gray"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-silver"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-gold"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-blue"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-red"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-black"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-green"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-yellow"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-white"
-          />
-          <Button
-            variant="color-picker"
-            size={null}
-            className="bg-product-purple"
-          />
-          <Button
-            variant="color-picker-selected"
-            size={null}
-            className="bg-product-gold"
-          />
+          <ButtonColorPicker color="var(--color-product-space-gray)" />
+          <ButtonColorPicker color="var(--color-product-silver)" />
+          <ButtonColorPicker color="var(--color-product-gold)" />
+          <ButtonColorPicker color="var(--color-product-blue)" />
+          <ButtonColorPicker color="var(--color-product-red)" />
+          <ButtonColorPicker color="var(--color-product-black)" />
+          <ButtonColorPicker color="var(--color-product-green)" />
+          <ButtonColorPicker color="var(--color-product-yellow)" />
+          <ButtonColorPicker color="var(--color-product-white)" />
+          <ButtonColorPicker color="var(--color-product-purple)" />
+          <ButtonColorPicker color="var(--color-product-gold)" isSelected />
         </div>
       </div>
     </div>
