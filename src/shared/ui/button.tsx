@@ -24,12 +24,19 @@ const buttonVariants = cva(
         'pagination-selected':
           'rounded-none w-8 h-8 bg-pagination-selected text-white text-sm font-semibold leading-[21px] flex items-center justify-center',
 
-        /* ---------button-chevron----------- */
-        chevron:
+        /* ---------button-control (chevron, minus, plus)----------- */
+        control:
           'rounded-none w-8 h-8 bg-chevron-default text-white hover:bg-chevron-hover font-semibold leading-[21px] flex items-center justify-center',
 
-        'chevron-disabled':
+        'control-disabled':
           'rounded-none w-8 h-8 bg-chevron-disabled border border-chevron-border flex items-center justify-center opacity-100 [&_svg]:text-chevron-icon-disabled',
+
+        /* ---------button-favorite----------- */
+        favorite:
+          'rounded-none size-10 bg-favorite-default text-white hover:bg-favorite-hover',
+
+        'favorite-selected':
+          'rounded-none size-10 bg-favorite-selected border border-favorite-border text-[#EB5757]',
       },
       size: {
         default:

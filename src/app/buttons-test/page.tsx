@@ -1,9 +1,12 @@
 import { Button } from '@/shared/ui/button';
-
-import { ChevronDownIcon } from '../../shared/ui/icons-chevron/ChevronDown';
-import { ChevronLeftIcon } from '../../shared/ui/icons-chevron/ChevronLeft';
-import { ChevronRightIcon } from '../../shared/ui/icons-chevron/ChevronRight';
-import { ChevronUpIcon } from '../../shared/ui/icons-chevron/ChevronUp';
+import { ChevronDownIcon } from '@/shared/ui/icons/ChevronDown';
+import { ChevronLeftIcon } from '@/shared/ui/icons/ChevronLeft';
+import { ChevronRightIcon } from '@/shared/ui/icons/ChevronRight';
+import { ChevronUpIcon } from '@/shared/ui/icons/ChevronUp';
+import { HeartIcon } from '@/shared/ui/icons/HeartIcon';
+import { HeartIconSelected } from '@/shared/ui/icons/HeartIconSelected';
+import { MinusIcon } from '@/shared/ui/icons/MinusIcon';
+import { PlusIcon } from '@/shared/ui/icons/PlusIcon';
 
 export default function ButtonsDemo() {
   return (
@@ -20,20 +23,48 @@ export default function ButtonsDemo() {
       <div>
         <h2 className="text-white mb-4">Buttons Chevron</h2>
         <div className="flex gap-2">
-          <Button variant="chevron" size={null}>
+          <Button variant="control" size={null}>
             <ChevronLeftIcon />
           </Button>
-          <Button variant="chevron" size={null}>
+          <Button variant="control" size={null}>
             <ChevronRightIcon />
           </Button>
-          <Button variant="chevron" size={null}>
+          <Button variant="control" size={null}>
             <ChevronUpIcon />
           </Button>
-          <Button variant="chevron" size={null}>
+          <Button variant="control" size={null}>
             <ChevronDownIcon />
           </Button>
-          <Button variant="chevron-disabled" size={null}>
+          <Button variant="control-disabled" size={null}>
             <ChevronLeftIcon />
+          </Button>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-white mb-4">Buttons Favorite</h2>
+        <div className="flex gap-2">
+          <Button variant="favorite" size={null}>
+            <HeartIcon />
+          </Button>
+          <Button variant="favorite-selected" size={null}>
+            <HeartIconSelected />
+          </Button>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-white mb-4">Buttons Plus/Minus</h2>
+        <div className="flex gap-2">
+          <Button variant="control" size={null}>
+            <MinusIcon />
+          </Button>
+          <Button variant="control" size={null}>
+            <PlusIcon />
+          </Button>
+          <Button variant="control-disabled" size={null}>
+            <MinusIcon />
+          </Button>
+          <Button variant="control-disabled" size={null}>
+            <PlusIcon />
           </Button>
         </div>
       </div>

@@ -36,6 +36,12 @@
   --color-chevron-disabled: #0f1121;
   --color-chevron-border: #3b3e4a;
   --color-chevron-icon-disabled: #4a4d58;
+
+  /* ---------button-favorite----------- */
+  --color-favorite-default: #323542;
+  --color-favorite-hover: #4a4d58;
+  --color-favorite-selected: #0f1121;
+  --color-favorite-border: #3b3e4a;
 }
 
 :root {
