@@ -9,12 +9,12 @@ export const mont = localFont({
     },
     {
       path: '../assets/fonts/Mont-SemiBold.otf',
-      weight: '600',
+      weight: '700',
       style: 'normal',
     },
     {
       path: '../assets/fonts/Mont-Bold.otf',
-      weight: '700',
+      weight: '800',
       style: 'normal',
     },
   ],
