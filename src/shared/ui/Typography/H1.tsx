@@ -8,7 +8,7 @@ export const H1 = ({ className, children, ...props }: H1Props) => {
   return (
     <h1
       className={cn(
-        'text-[32px] leading-[41px] font-bold tracking-[-0.01em] md:text-[48px] md:leading-[56px]',
+        'text-[32px] leading-10.25 font-bold tracking-[-0.01em] md:text-[48px] md:leading-14',
         className,
       )}
       {...props}

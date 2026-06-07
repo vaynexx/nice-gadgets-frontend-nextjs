@@ -11,7 +11,7 @@ export const SmallText = ({
 }: SmallTextProps) => {
   return (
     <p
-      className={cn('text-[12px] leading-[15px] font-semibold', className)}
+      className={cn('text-[12px] leading-3.75 font-semibold', className)}
       {...props}
     >
       {children}

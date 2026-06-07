@@ -12,7 +12,7 @@ export const UppercaseText = ({
   return (
     <p
       className={cn(
-        'text-[12px] leading-[11px] font-bold uppercase tracking-[0.04em]',
+        'text-[12px] leading-2.75 font-bold uppercase tracking-[0.04em]',
         className,
       )}
       {...props}

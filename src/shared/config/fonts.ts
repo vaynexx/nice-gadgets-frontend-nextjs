@@ -4,7 +4,7 @@ export const mont = localFont({
   src: [
     {
       path: '../assets/fonts/Mont-Regular.otf',
-      weight: '400',
+      weight: '600',
       style: 'normal',
     },
     {

@@ -8,7 +8,7 @@ export const H4 = ({ className, children, ...props }: H4Props) => {
   return (
     <h4
       className={cn(
-        'text-[16px] leading-[20px] font-semibold md:text-[20px] md:leading-[26px]',
+        'text-[16px] leading-5 font-semibold md:text-[20px] md:leading-6.5',
         className,
       )}
       {...props}
