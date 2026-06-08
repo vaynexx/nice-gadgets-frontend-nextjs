@@ -42,6 +42,23 @@
   --color-favorite-hover: #4a4d58;
   --color-favorite-selected: #0f1121;
   --color-favorite-border: #3b3e4a;
+
+  /* ---------button-primary----------- */
+  --color-brand-primary: #905bff;
+  --color-brand-primary-hover: #7f4fe6;
+  --color-brand-selected: #323542;
+
+  /* ---------button-transparent----------- */
+  --color-brand-transparent-text: #323542;
+  --color-brand-transparent-hover: #7f4fe6;
+<<<<<<< HEAD
+=======
+
+  /* ---------button-sizes----------- */
+  --size-button-sm: 100px;
+  --size-button-md: 125px;
+  --size-button-lg: 160px;
+>>>>>>> 7d42c17ba6ad56331d0a12ed260dc37c05f05614
 }
 
 :root {

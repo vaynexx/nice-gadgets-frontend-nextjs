@@ -30,23 +30,11 @@ const buttonVariants = cva(
           'rounded-none bg-favorite-default text-white hover:bg-favorite-hover aria-pressed:bg-favorite-selected aria-pressed:border aria-pressed:border-favorite-border aria-pressed:text-[#EB5757]',
 
         /* ---------Primary----------- */
-        primary: 'bg-[#905BFF] text-white hover:bg-[#7F4FE6]',
+        primary:
+          'bg-brand-accent text-brand-white hover:bg-brand-primary-hover data-[state=selected]:bg-brand-selected',
 
-        /* ---------Selected----------- */
-        selected: 'bg-[#323542] text-white hover:bg-gray-400',
-
-        /* ---------Hover----------- */
-
-        hover: 'bg-[#A378FF] text-white hover:bg-[#7F4FE6]',
-
-        /* ---------default >----------- */
-
-        defaultTransparentSmall:
-          'bg-transparent text-[#323542] hover:text-[#323542]',
-
-        /* ---------hover >----------- */
-
-        hoverTransparentSmall: 'bg-transparent text-[#323542]',
+        /* ---------Transparent----------- */
+        transparent: 'bg-transparent text-neutral-800 hover:text-brand-primary',
       },
       size: {
         default:
@@ -54,6 +42,7 @@ const buttonVariants = cva(
         xs: "h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
         lg: 'h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2',
+        xl: 'h-10 w-[176px] text-sm font-medium rounded-none',
         icon: 'size-8',
         'icon-xs':
           "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
@@ -61,21 +50,13 @@ const buttonVariants = cva(
           'size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg',
         'icon-lg': 'size-9',
 
-        /* ---------buttons sizes: pagination, control(chevron, minus, plus), favorite, picker----------- */
+        /* ---------buttons sizes: pagination, control, favorite----------- */
         'sq-8': 'size-8',
         'sq-10': 'size-10',
 
-        /* ---------твій Primary----------- */
-        primary: 'h-10 w-[176px] text-sm font-medium rounded-none',
-
-        selected: 'h-10 w-[176px] text-sm font-medium rounded-none',
-
-        hover: 'h-10 w-[176px] text-sm font-medium rounded-none',
-
-        defaultTransparentSmall:
-          'h-[16px] w-[56px] text-xs font-medium rounded-none',
-        hoverTransparentSmall:
-          'h-[16px] w-[56px] text-xs font-medium rounded-none',
+        /* ---------Responsive Primary----------- */
+        responsive:
+          'h-10 text-sm font-medium rounded-none w-[100px] sm:w-[125px] lg:w-[160px]',
       },
     },
     compoundVariants: [
