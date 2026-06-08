@@ -31,10 +31,10 @@ const buttonVariants = cva(
 
         /* ---------Primary----------- */
         primary:
-          'bg-[#905BFF] text-white hover:bg-[#7F4FE6] data-[state=selected]:bg-[#323542]',
+          'bg-brand-primary text-white hover:bg-brand-primary-hover data-[state=selected]:bg-brand-selected',
 
         /* ---------Transparent----------- */
-        transparent: 'bg-transparent text-[#323542] hover:text-[#7F4FE6]',
+        transparent: 'bg-transparent text-neutral-800 hover:text-brand-primary',
       },
       size: {
         default:

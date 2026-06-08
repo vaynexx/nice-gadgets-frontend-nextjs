@@ -3,6 +3,16 @@ interface ButtonColorPickerProps {
   isSelected?: boolean;
   onClick?: () => void;
 }
+export const buttonVariants = {
+  primary:
+    'bg-[--color-brand-primary] text-white hover:bg-[--color-brand-primary-hover] data-[state=selected]:bg-[--color-brand-selected]',
+
+  transparent:
+    'bg-transparent text-[--color-brand-transparent-text] hover:text-[--color-brand-transparent-hover]',
+
+  responsive:
+    'h-10 text-sm font-medium rounded-none w-[--size-button-sm] sm:w-[--size-button-md] lg:w-[--size-button-lg]',
+};
 
 export function ButtonColorPicker({
   color,
